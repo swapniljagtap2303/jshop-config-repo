@@ -30,4 +30,4 @@ jwt:
 
 sendgrid:
   api:
-    key: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
+    key: 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
