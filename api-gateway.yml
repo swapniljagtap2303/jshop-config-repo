@@ -23,3 +23,6 @@ eureka:
 
   instance:
     prefer-ip-address: true
+
+jwt:
+  secret: ${JWT_SECRET:mysecurekeymysecurekeymysecurekey123456}
