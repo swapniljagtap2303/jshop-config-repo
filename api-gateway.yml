@@ -12,9 +12,18 @@ spring:
 
         - id: auth-service
           uri: lb://AUTH-SERVICE
-
           predicates:
             - Path=/api/auth/**
+
+        - id: auth-service-admin
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/api/admin/**
+
+        - id: auth-service-seller
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/api/seller/**
 
 eureka:
   client:
