@@ -25,15 +25,15 @@ spring:
           predicates:
             - Path=/api/seller/**
             
-        - id: product-service
-          uri: lb://PRODUCT-SERVICE
-          predicates:
-            - Path=/api/admin/products/**
+        # - id: product-service
+        #   uri: lb://PRODUCT-SERVICE
+        #   predicates:
+        #     - Path=/api/admin/products/**
 
-        - id: product-service
-          uri: lb://PRODUCT-SERVICE
-          predicates:
-            - Path=/api/seller/products/**
+        # - id: product-service
+        #   uri: lb://PRODUCT-SERVICE
+        #   predicates:
+        #     - Path=/api/seller/products/**
 
         - id: product-service
           uri: lb://PRODUCT-SERVICE
