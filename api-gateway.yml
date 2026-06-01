@@ -28,12 +28,12 @@ spring:
         - id: product-service
           uri: lb://PRODUCT-SERVICE
           predicates:
-            - Path=/api/admin/**
+            - Path=/api/admin/products/**
 
         - id: product-service
           uri: lb://PRODUCT-SERVICE
           predicates:
-            - Path=/api/seller/**
+            - Path=/api/seller/products/**
 
         - id: product-service
           uri: lb://PRODUCT-SERVICE
